@@ -1,21 +1,22 @@
 package patrick.student;
 import java.util.Random;
 import java.util.Scanner;
-public class callname {
+public class RandomPointName {
 	public static void main(String[] args) {
         System.out.println("------------云计算一二班点名程序------------");
         System.out.println("------------请你选择序号进行操作------------");
         System.out.println("================================");
         System.out.println("      （1）浏览班级学生姓名信息");
         System.out.println("      （2）随机抽取班级学生姓名");
-        System.out.println("      （3）退    出   这  个   程   序");
+        System.out.println("      （3）退出这个程序");
         System.out.println("================================");
         String[] student = {"王庚","唐梓铭","蒋芷若","任丽","杨曾云","施奕任","沈逸天","彭兆波","沈旭翔","杨卓颖","张孜瑞","冷佩芸","陈俊洁",
         		"李馥君","蒋镇宇","李思琪","鄢小航","李科蓓","李书睿","叶云汲","李长江","张佳军","罗旭","汪汉培","李茂","李靖宇","蔡章进","王德敏",
         		"田展鹏","杨鹤鸣","高维","黄凡","毛沛","江天韵","李绍洁","钟茂一","简金龙","王浩宇","李雨洋","王珺","王宇涛","王奕皓","王海","彭孟蝶",
-        		"陈锐航","程文奇","鲁志恒","杨华","杨帆","徐瑞","余杰","欧阳乐","钟富强","明胜","叶涛","伍一波","郭玲涛","严章超","李成杰","雷兴露","王重然"};//如果引用文件更方便
+        		"陈锐航","程文奇","鲁志恒","杨华","杨帆","徐瑞","余杰","欧阳乐","钟富强","明胜","叶涛","伍一波","郭玲涛","严章超","李成杰","雷兴露","王重然"};
+		//引用文件更方便
 /**
- * 使用该数组出现的问题：
+ * 报错：
  * Error occurred during initialization of VM 
  * Could not reserve enough space for object heap
  * 解决办法：
@@ -64,7 +65,7 @@ public class callname {
         System.out.println();
     }
     public static String randomstudent(String[] stu){
-        int a = new Random().nextInt(stu.length);//在数组里头儿获取随机数，nextInt 返回值是int类型的（stu.length）数组长度
+        int a = new Random().nextInt(stu.length);//在数组里获取随机数，nextInt 返回值是int类型的（stu.length）数组长度
         System.out.println("温馨提示：*****当前正在进行点名!!*****");
         System.out.println("      第"+(a+1)+"个同学被点到了！");
         String name = stu[a];
